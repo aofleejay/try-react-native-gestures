@@ -22,7 +22,7 @@ export default class App extends React.Component {
           leftTransition: dx,
         })
       },
-      onPanResponderEnd: (e, gestureState) => {
+      onPanResponderRelease: (e, gestureState) => {
         const { top, left } = this.state
         const { dy, dx } = gestureState
 
